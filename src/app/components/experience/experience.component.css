@@ -1,0 +1,150 @@
+/* General Styles */
+.w-full {
+  width: 100%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.bg-gray-800 {
+  background-color: #1a1a1a;
+}
+
+.text-gray-300 {
+  color: #d1d5db;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.max-w-3xl {
+  max-width: 768px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.relative {
+  position: relative;
+}
+
+.pl-8 {
+  padding-left: 2rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
+.border-l-2 {
+  border-left-width: 2px;
+}
+
+.border-gray-600 {
+  border-color: #4b5563;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+/* Timeline Dots and Year */
+.absolute {
+  position: absolute;
+}
+
+.left {
+  left: -7rem; /* Keeps it to the left */
+  top: 0; /* Aligns with the job title level */
+}
+
+.left2 {
+  left: -4.5rem; /* Align with the same left positioning as .left */
+  top: 21rem; /* Adjust to align with the second job title */
+}
+
+.bg-gray-700 {
+  background-color: #374151;
+}
+
+.rounded {
+  border-radius: 0.375rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.bg-amber-400 {
+  background-color: #00ff00;;
+  left: 2rem;
+}
+
+.bg-amber-400::after {
+  content: '';
+  position: absolute;
+  width: 2px; /* Width of the vertical line */
+  height: 150px; /* Adjust to your desired length */
+  background-color: white;
+  top: 100%; /* Position it below the amber circle */
+  left: 50%; /* Center align with the circle */
+  transform: translateX(-50%); /* Adjust for perfect centering */
+}
+/* Content Styles */
+.ml-8 {
+  margin-left: 2rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.text-gray-400 {
+  color: #9ca3af;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
+}

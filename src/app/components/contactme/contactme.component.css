@@ -1,0 +1,127 @@
+.container {
+  display: block;
+  background-color: #1a1a1a;
+  height: 100vh;
+  width: 100%;
+}
+.contact-page {
+  background-color: #101010;
+  padding: 30px;
+  max-width: 600px;
+  margin-top: 50px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 30px; /* Moves the element 100px down */
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-page {
+    background-color: #101010;
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-page h2 {
+    font-size: 1.8em;
+    color: #00ff00;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-form h3 {
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1em;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #a09e9e;
+    border-radius: 4px;
+    background-color: #101010;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #00ff00;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #00ff00;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #70db70;
+}
+
+.contact-form input,
+.contact-form textarea {
+  color: white; /* Sets the text color to white */
+  background-color: #2c2c2c; /* Optional: Dark background for better contrast */
+  border: 1px solid #444; /* Optional: Border color */
+  padding: 10px;
+  font-size: 16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none; /* Removes the default outline */
+  border-color: #555; /* Changes border color on focus */
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa; /* Placeholder text color */
+}
+
+.contact-form input,
+.contact-form textarea {
+  transition: color 0.2s, background-color 0.2s; /* Smooth transition for color changes */
+}
