@@ -15,7 +15,7 @@ export class ProjectsComponent {
       and optimized database queries to enhance performance.`,
       techStack: ['Node.js', 'Angular', 'MongoDB', 'Express', 'TypeScript', 'JavaScript'],
       githubLink: 'https://github.com/shadohmm/TopSlice',
-      image: '../../../assets/images/Topslice.png',
+      image: 'src/assets/images/Topslice.png',
       altText: 'TopSlice Home Page',
     },
     {
@@ -32,7 +32,7 @@ export class ProjectsComponent {
         'Object Detection',
       ],
       githubLink: 'https://github.com/shadohmm/Smart-Street-Light-Management-System',
-      image: '../../../assets/images/SSLMS.png',
+      image: 'src/assets/images/SSLMS.png',
       altText: 'Smart Street Light System',
     },
   ];
