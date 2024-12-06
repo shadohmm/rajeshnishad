@@ -1,4 +1,4 @@
-<div class="nav">
+<!-- <div class="nav">
     <div class="container">
         <div class="logo">
             <h1>Nishad <span>Rajesh</span></h1>
@@ -17,5 +17,27 @@
             <a href="https://github.com/shadohmm" target="_blank"><img src="src/assets/icons/github.png" alt="GitHub"></a>
         </div>
     </div>
-</div>
+</div> -->
+
+<div class="nav">
+    <div class="container">
+        <div class="row">
+        <div class="menu-btn" (click)="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+            <a href="">Nishad <span>Rajesh</span></a>
+            </div>
+            <ul class="main-menu" [class.show]="isMenuOpen">
+                <li><a routerLink="/home" routerLinkActive="active">About</a></li>
+                <li><a routerLink="/skills" routerLinkActive="active">Skills</a></li>
+                <li><a routerLink="/experience" routerLinkActive="active">Experience</a></li>
+                <li><a routerLink="/projects" routerLinkActive="active">Projects</a></li>
+                <li><a routerLink="/contact" routerLinkActive="active">Contacts</a></li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+</div> 
 <router-outlet></router-outlet>

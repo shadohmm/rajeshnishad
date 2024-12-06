@@ -21,31 +21,32 @@
     <div class="hero">
         <div class="hero-text">
             <span class="role">Web Developer</span>
-            <h2>Full Stack web Developer</h2>
-            <p>I am an enthusiastic Associate Application Developer with expertise in full-stack web development, including Angular, Node.js, and SQL. Currently working at 
+            <h2 class="role-type">Full Stack web Developer</h2>
+            <p class="role-text">I am an enthusiastic Associate Application Developer with expertise in full-stack web development, including Angular, Node.js, and SQL. Currently working at 
                 Accenture, I leverage my skills in web development to design responsive, user-friendly applications while continually improving system performance. </p>
-            <a routerLink="/contact" class="cta">Let's Chat!</a>
+            <a class="resume" (click)="downloadResume($event)"  class="cta">Resume </a>
             <div class="stats">
-                <div class="stat">
-                    <h3>2</h3>
-                    <p>Years Experience</p>
+                <div class="stat stat-exp">
+                    <h3 class="year-num">2</h3>
+                    <p class="year-word">Years Experience</p>
                 </div>
-                <div class="stat">
-                    <h3>Accenture</h3>
-                    <p>Associate Software Engineer</p>
+                <div class="stat stat-role">
+                    <h3 class="role-com">Accenture</h3>
+                    <p class="role-position">Associate Software Engineer</p>
                 </div>
             </div>
         </div>
         <div class="hero-image-container">
             <div class="circle"></div>
             <!-- <img src="asrc/assets/images/rajesh-rbg.png" alt="Rajesh Nishad"> -->
-            <img src="/assets/images/rajesh-rbg.png" alt="Rajesh Nishad">
-        </div>   
-        <div class="skill"> 
-            <!-- Node.js and Angular logos inside the image container -->
-            <img src="/assets/icons/nodejs.png" alt="Node.js" class="nodejs">
-            <img src="/assets/icons/angular.png" alt="Angular" class="angular">
-            <img src="/assets/icons/programing.png" alt="JavaScript" class="javascript">
+            <!-- <img src="/assets/images/rajesh-rbg.png" alt="Rajesh Nishad"> -->
+           
+            <div class="skill"> 
+                <!-- Node.js and Angular logos inside the image container -->
+                <img src="/assets/icons/nodejs.png" alt="Node.js" class="nodejs">
+                <img src="/assets/icons/angular.png" alt="Angular" class="angular">
+                <img src="/assets/icons/programing.png" alt="JavaScript" class="javascript">
+            </div>
         </div>
     </div>
 </div>

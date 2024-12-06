@@ -1,4 +1,4 @@
-/* certificate.component.css */
+/* Preserve the full-screen design */
 .home {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -6,43 +6,7 @@
     color: #fff;
     height: 100vh;
     width: 100%;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.logo h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-.logo span {
-    color: #00ff00;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
-.social-icons{
-    margin-right: 100px;
-}
-.social-icons img {
-    margin-right: 90px;
-    height: 40px;
-    width: 40px;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .hero {
@@ -53,6 +17,10 @@ nav a {
 }
 
 .hero-text {
+    /* position: absolute; */
+    top: 40%; /* Adjust this value to move the circle vertically */
+    left: 50%;
+    transform: translate(-5%, -28%);
     max-width: 50%;
     margin-top: 10%;
     margin-left: 80px;
@@ -73,6 +41,7 @@ h2 {
 p {
     font-size: 18px;
     margin: 0 0 20px;
+    line-height: 1.5; /* Improve readability */
 }
 
 .cta {
@@ -81,55 +50,40 @@ p {
     color: #1a1a1a;
     padding: 10px 20px;
     text-decoration: none;
+    border-radius: 5px;
 }
 
 .hero-image-container {
     position: relative;
-    display: inline-block;
-    /* margin-right: 10%; */
-}
-
-.hero-image-container img {
-    display: block;
-    position: relative;
-    z-index: 1;
-    max-width: 100%;
-    height: auto;
+    max-width: 500px;
+    flex-shrink: 0;
 }
 
 .circle {
-    position: absolute;
+    /* position: absolute; */
     top: 40%; /* Adjust this value to move the circle vertically */
     left: 50%;
-    transform: translate(-55%, -35%);
-    width: 500px;
-    height: 500px;
+    transform: translate(-10%, 1%);
+    width: 400px;
+    height: 400px;
     background-color: #101010;
-    /* background-image: url(../../../assets/images/rajesh-rbg.png); */
-    background-size: cover; /* Ensures the image covers the entire circle */
-    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
-    background-position: center; /* Centers the image */
+    background-image: url(/assets/images/rajesh-rbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 50%;
     z-index: 0;
-}
-
-/* Position Node.js and Angular logos on top of the hero image */
-
-/* Position Node.js logo on the left */
-/* .nodejs {
-    left: 15%; /* Position the Node.js logo to the left */
-/* } */ 
-
-/* Position Angular logo on the right */
-.angular {
-    right: 15%; /* Position the Angular logo to the right */
+    
 }
 
 .stats {
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
+    gap: 20px;
     background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .stat h3 {
@@ -137,37 +91,235 @@ p {
     font-size: 48px;
 }
 
+.skill {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
 .skill img {
-    position: absolute;
-    top: 35%; /* Vertically center the logos */
-    transform: translateY(-50%); /* Adjust to keep logos centered vertically */
-    z-index: 2; /* Ensure logos appear above other elements */
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #101010;
+    z-index: 1;
 }
 
 .nodejs {
-    margin-top: 200px;
-    right: 37%;
-    width: 80px;
-    height: auto;
-    
-}
+    top: 5%; 
+    left: 50%;
+    transform: translate(-250%, -400%); 
+} 
+
 .angular {
-    margin-top: 330px;
-    width: 100px;
-    height: auto;
-
+    top: 5%; 
+    left: 50%;
+    transform: translate(200%, -180%);
 }
 
-.javascript{
-    right: 13%;
-    width: 80px;
-    margin-bottom: 100px;
+.javascript {
+    top: 5%; 
+    left: 50%;
+    transform: translate(30%, -600%);
 }
-.nodejs, .angular, .javascript{
-    position: absolute;
-    top: 50%; /* Vertically center the logos */
-    transform: translateY(-50%); /* Keep logos centered vertically */
-    border-radius: 50%; /* Makes the border circular */
-    z-index: 2; /* Ensure logos appear above other elements */
-    background-color: #101010;
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+    .hero {
+        flex-wrap: wrap; /* Allow elements to stack */
+        justify-content: center;
+        padding: 20px;
+        margin-top: 150px;
+        margin-left: 80px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        margin: 20px 0;
+        text-align: center; /* Center-align text for better presentation */
+        transform: translate(-4%, 65%);
+    }
+
+    .hero-image-container {
+        margin: 20px auto;
+        top: 5%; 
+        left: 50%;
+        transform: translate(-105%, -140%);
+    }
+
+    .circle {
+        width: 400px;
+        height: 400px;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat h3 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 10px;
+        margin-left: 300px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        margin: 20px 0;
+        text-align: center; /* Center-align text for better presentation */
+        transform: translate(-55%, 39%);
+    }
+
+    .hero-image-container {
+        margin: 20px auto;
+        top: 5%; 
+        left: 50%;
+        transform: translate(-105%, -200%);
+    }
+    .circle {
+        width: 300px;
+        height: 300px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .stats {
+        padding: 10px;
+    }
+
+    .skill img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text {
+        margin: 0;
+        text-align: center;
+    }
+    .hero-text {
+        max-width: auto;
+        margin: 20px auto;
+        /* text-align: center; Center-align text for better presentation */
+        transform: translate(-2900%, 10%);
+    }
+
+    .hero-image-container {
+        margin: 20px auto;
+        top: 5%; 
+        left: 50%;
+        transform: translate(-65%, -380%);
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .cta {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .skill img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .javascript{
+        transform: translate(20%, -580%);
+
+    }
+    .angular {
+        transform: translate(150%, -200%);
+
+    }
+
+    .nodejs {
+
+        transform: translate(-187%, -380%);
+
+    }
+    .role {
+        width: 150px;
+        transform: translate(-10%, -20%);
+    }
+    .role-type {
+        width: 340px;
+        transform: translate(-30%, -20%);
+    }
+    .role-text{
+        width: 300px;
+        transform: translate(-30%, -0%);
+    }
+
+    a {
+        transform: translate(-0%, -0%);
+
+    }
+
+    .stat {
+        top: 40%; /* Adjust this value to move the circle vertically */
+    left: 50%;
+    transform: translate(-10%, 1%);
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+    /* background-image: url(/assets/images/rajesh-rbg.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    z-index: 0;
+    transform: translate(21%, -0%);
+    }
+
+    .stats {
+        /* margin-top: 20px; */
+        display: flex;
+        justify-content: space-around;
+        /* gap: 20px; */
+        background-color: #1a1a1a;;
+        padding: 10px;
+        /* border-radius: 10px; */
+    }
+
+    .year-num {
+        transform: translate(1%, 140%);
+
+    }
+    .year-word {
+        transform: translate(1%, 240%);
+
+    }
+
+    .role-com {
+        font-size: 1rem;
+        transform: translate(1%, 140%);
+    }
+
+    .role-position{
+        transform: translate(1%, 250%);
+    }
 }
