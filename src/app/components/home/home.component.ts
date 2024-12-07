@@ -10,7 +10,7 @@ export class HomeComponent {
   downloadResume(event: Event) {
     event.preventDefault(); 
     const link = document.createElement('a');
-    link.href = '/assets/pdf/Nishad_Rajesh.pdf'; // Path to your PDF file
+    link.href = '/rajeshnishad/assets/pdf/Nishad_Rajesh.pdf'; // Path to your PDF file
     link.download = 'Nishad Rajesh'; // File name to save as
     link.click();
 
