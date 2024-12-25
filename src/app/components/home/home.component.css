@@ -7,7 +7,7 @@
     height: 100vh;
     width: 100%;
     overflow-x: hidden; 
-
+}
 .hero {
     display: flex;
     justify-content: space-between;
@@ -171,7 +171,7 @@ p {
     .hero-text {
         max-width: 100%;
         margin: 20px 0;
-        text-align: center; /* Center-align text for better presentation */
+        text-align: center; 
         transform: translate(-55%, 39%);
     }
 
@@ -202,124 +202,4 @@ p {
         width: 50px;
         height: 50px;
     }
-}
-
-@media (max-width: 480px) {
-    .hero-text {
-        margin: 0;
-        text-align: center;
-    }
-    .hero-text {
-        max-width: auto;
-        margin: 20px auto;
-        /* text-align: center; Center-align text for better presentation */
-        transform: translate(-2900%, 10%);
-    }
-
-    .hero-image-container {
-        margin: 20px auto;
-        top: 5%; 
-        left: 50%;
-        transform: translate(-65%, -380%);
-    }
-
-    h2 {
-        font-size: 1.2rem;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    .cta {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
-
-    .circle {
-        width: 200px;
-        height: 200px;
-    }
-
-    .skill img {
-        width: 35px;
-        height: 35px;
-    }
-
-    .javascript{
-        transform: translate(20%, -580%);
-
-    }
-    .angular {
-        transform: translate(150%, -200%);
-
-    }
-
-    .nodejs {
-
-        transform: translate(-187%, -380%);
-
-    }
-    .role {
-        width: 150px;
-        transform: translate(-10%, -20%);
-    }
-    .role-type {
-        width: 340px;
-        transform: translate(-30%, -20%);
-    }
-    .role-text{
-        width: 300px;
-        transform: translate(-30%, -0%);
-    }
-
-    a {
-        transform: translate(-0%, -0%);
-
-    }
-
-    .stat {
-        top: 40%; /* Adjust this value to move the circle vertically */
-    left: 50%;
-    transform: translate(-10%, 1%);
-    width: 200px;
-    height: 200px;
-    background-color: #333;
-    /* background-image: url(/assets/images/rajesh-rbg.png); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-    z-index: 0;
-    transform: translate(21%, -0%);
-    }
-
-    .stats {
-        /* margin-top: 20px; */
-        display: flex;
-        justify-content: space-around;
-        /* gap: 20px; */
-        background-color: #1a1a1a;;
-        padding: 10px;
-        /* border-radius: 10px; */
-    }
-
-    .year-num {
-        transform: translate(1%, 140%);
-
-    }
-    .year-word {
-        transform: translate(1%, 240%);
-
-    }
-
-    .role-com {
-        font-size: 1rem;
-        transform: translate(1%, 140%);
-    }
-
-    .role-position{
-        transform: translate(1%, 250%);
-    }
-}
 }
