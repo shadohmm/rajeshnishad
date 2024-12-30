@@ -7,7 +7,8 @@ import { ContactmeComponent } from './components/contactme/contactme.component';
 import { SkillsComponent } from './components/skills/skills.component';
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
+  // added comments
+  {path: '', component: HomeComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   {path: 'skills', component: SkillsComponent},
   { path: 'experience', component: ExperienceComponent },
