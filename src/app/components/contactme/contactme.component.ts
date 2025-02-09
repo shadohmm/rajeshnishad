@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./contactme.component.css']
 })
 export class ContactmeComponent {
-  email = 'rajeshnishad1242k@gmail.com';
+  email = 'nishad.rajesh.1242k@gmail.com';
   userName = '';
   userEmail = '';
   userMessage = '';

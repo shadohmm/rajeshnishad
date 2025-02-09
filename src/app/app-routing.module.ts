@@ -7,14 +7,14 @@ import { ContactmeComponent } from './components/contactme/contactme.component';
 import { SkillsComponent } from './components/skills/skills.component';
 
 const routes: Routes = [
-  // added comments
-  {path: '', component: HomeComponent},
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  {path: 'skills', component: SkillsComponent},
+  { path: '', component: HomeComponent },
+  { path: 'skills', component: SkillsComponent },
   { path: 'experience', component: ExperienceComponent },
   { path: 'projects', component: ProjectsComponent },
-  { path: 'contact', component: ContactmeComponent }
+  { path: 'contact', component: ContactmeComponent },
+  { path: '**', redirectTo: '' }  
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

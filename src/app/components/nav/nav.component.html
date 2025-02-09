@@ -9,7 +9,7 @@
                     <a href="">Nishad <span>Rajesh</span></a>
                 </div>
                 <ul class="main-menu" [class.show]="isMenuOpen">
-                    <li><a routerLink="/home" routerLinkActive="active" (click)="toggleMenu()">About</a></li>
+                    <li><a routerLink="/" routerLinkActive="active"[routerLinkActiveOptions]="{ exact: true }"(click)="toggleMenu()">About</a></li>
                     <li><a routerLink="/skills" routerLinkActive="active" (click)="toggleMenu()">Skills</a></li>
                     <li><a routerLink="/experience" routerLinkActive="active" (click)="toggleMenu()">Experience</a></li>
                     <li><a routerLink="/projects" routerLinkActive="active" (click)="toggleMenu()">Projects</a></li>
